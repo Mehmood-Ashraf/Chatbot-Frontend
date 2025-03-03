@@ -78,7 +78,7 @@ async function sendMessage () {
         loadingDiv.innerText = "Thinking...."
         chatbox.appendChild(loadingDiv)
 
-        const response = await fetch("https://chatbot-backend-production-8c56.up.railway.app/", options)
+        const response = await fetch("https://chatbot-backend-production-8c56.up.railway.app/chat", options)
         const data = await response.json()
         chatbox.removeChild(loadingDiv)
 
